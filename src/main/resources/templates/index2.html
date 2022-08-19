@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf use model</title>
+</head>
+<body>
+  <h2 th:text ="${message}">
+  </h2>
+  <tr th:text="List: ${Name}">
+      <td th:text = ${Name.id}></td>
+      <td th:text = ${Name.name}></td>
+      <td th:text = ${Name.age}></td>
+  </tr>
+</body>
+</html>
