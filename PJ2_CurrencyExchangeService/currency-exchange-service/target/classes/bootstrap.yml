@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888 #Dang ky voi config server
+  application:
+    name: currency-exchange-service
+  profiles:
+    active: dev # Khi chay lay thong tin tuong ung currency-exchange-service-dev.properties
+
+server:
+  port: 8000
+
+# Dang ky voi eureka server day la mot eureka client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
